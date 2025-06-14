@@ -1,0 +1,107 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 426
+  ClientWidth = 679
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TasksReminder: TGroupBox
+    Position.X = 384.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 344.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Task Reminder'
+    TabOrder = 10
+  end
+  object Label1: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 210.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Add Task'
+    TabOrder = 1
+  end
+  object TaskEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 24.000000000000000000
+    Position.Y = 97.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ADD: TButton
+    StyledSettings = [Family, Size]
+    Position.X = 264.000000000000000000
+    Position.Y = 97.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'ADD'
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColorForState.Focused = claBlack
+    TextSettings.Trimming = None
+    OnClick = ADDClick
+  end
+  object ReminderDate: TDateEdit
+    Date = 45621.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object ReminderTime: TTimeEdit
+    Time = 0.239686631944444500
+    Position.X = 424.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object ReminderMessage: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 424.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SetReminderBtn: TButton
+    Position.X = 448.000000000000000000
+    Position.Y = 335.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Set Reminder'
+    TextSettings.Trimming = None
+    OnClick = SetReminderBtnClick
+  end
+  object ReminderTimer: TTimer
+    OnTimer = ReminderTimerTimer
+    Left = 608
+    Top = 368
+  end
+  object TasksListBox: TListBox
+    Position.X = 24.000000000000000000
+    Position.Y = 184.000000000000000000
+    TabOrder = 9
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = TasksListBoxItemClick
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+end
