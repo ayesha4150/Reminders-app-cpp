@@ -39,16 +39,6 @@ A simple desktop task scheduler and reminder app built using **Embarcadero C++ B
 
 ---
 
-
-
-## 📁 File Structure
-
-├── Unit1.cpp # Main app logic
-├── Unit1.h # Header file
-├── *.fmx # FireMonkey UI layout
-
----
-
 ## 📌 Author
 
 Ayesha Riaz  
